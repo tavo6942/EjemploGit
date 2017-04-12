@@ -10,7 +10,7 @@ public class Rational {
 	}
 	 
 	public Rational add(Rational number) {
-		int numeratorRes=this.numerator*number.denominator + this.denominator*number.numerator;
+		int numeratorRes=(this.numerator*number.denominator) + (this.denominator*number.numerator);
 		int denominatorRes= this.denominator*number.denominator;
 		
 		return new Rational(numeratorRes, denominatorRes);

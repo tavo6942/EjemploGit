@@ -20,5 +20,18 @@ public class TestRational {
 		assertTrue(expected.equals(result));
 		
 	}
+	@Test
+	public void AddTwofourthAndFourFithShoulbeTwentySixTwenteen() {
+		//arrange
+		Rational number1= new Rational(2,4);
+		Rational number2= new Rational(4,5);
+		Rational result;
+		Rational expected= new Rational(26,20);
+		//act
+		result= number1.add(number2);
+		
+		//assert
+		assertTrue(expected.equals(result));
 
+}
 }
